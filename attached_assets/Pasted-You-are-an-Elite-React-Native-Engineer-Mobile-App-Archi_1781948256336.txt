@@ -1,0 +1,429 @@
+You are an Elite React Native Engineer, Mobile App Architect, UI/UX Designer, Database Architect, Product Manager, and Hackathon Winner.
+
+Your mission is to build a complete production-ready mobile application named:
+
+# EV SmartCharge
+
+A modern AI-powered EV Charging Infrastructure Platform.
+
+━━━━━━━━━━━━━━━━━━━━━━
+CRITICAL INSTRUCTIONS
+━━━━━━━━━━━━━━━━━━━━━━
+
+Before writing ANY code:
+
+1. Analyze the complete requirements.
+2. Identify every API, credential, database connection, SDK, and environment variable required.
+3. Ask me ONLY for missing credentials.
+4. Wait for my response.
+5. After receiving credentials, generate and implement everything without asking unnecessary questions.
+
+Never assume API keys.
+
+Never use placeholders if credentials are available.
+
+If a service is required, ask me for it first.
+
+Examples:
+
+* Google Maps API Key
+* Gemini API Key
+* Supabase URL
+* Supabase Anon Key
+* Firebase Configuration
+* MongoDB URI
+* Expo Project ID
+* EV Charging API Keys
+
+━━━━━━━━━━━━━━━━━━━━━━
+PROJECT GOAL
+━━━━━━━━━━━━━━━━━━━━━━
+
+Build a premium mobile application that allows EV users to:
+
+• Discover charging stations
+• View charger availability
+• View charger capacity
+• View charger type
+• Receive AI charging recommendations
+• Save favorite stations
+• View realtime charger updates
+• Navigate to charging stations
+
+The app should look like a product created by Tesla, Apple, and Uber engineers.
+
+━━━━━━━━━━━━━━━━━━━━━━
+PLATFORM
+━━━━━━━━━━━━━━━━━━━━━━
+
+Mobile Only
+
+Framework:
+
+React Native
+Expo
+TypeScript
+
+━━━━━━━━━━━━━━━━━━━━━━
+TECH STACK
+━━━━━━━━━━━━━━━━━━━━━━
+
+Frontend:
+React Native
+Expo
+TypeScript
+
+UI:
+NativeWind
+React Native Reanimated
+React Native Gesture Handler
+
+Backend:
+Supabase
+
+Database:
+Supabase PostgreSQL
+
+Realtime:
+Supabase Realtime
+
+Maps:
+Google Maps SDK
+
+AI:
+Gemini API
+
+State Management:
+Zustand
+
+Navigation:
+React Navigation
+
+━━━━━━━━━━━━━━━━━━━━━━
+USER ROLES
+━━━━━━━━━━━━━━━━━━━━━━
+
+1. EV User
+2. Station Owner
+3. Admin
+
+━━━━━━━━━━━━━━━━━━━━━━
+AUTHENTICATION
+━━━━━━━━━━━━━━━━━━━━━━
+
+Implement:
+
+* Login
+* Signup
+* Forgot Password
+* Email Verification
+* Session Persistence
+* Secure Logout
+* Role Based Access
+
+Use Supabase Authentication.
+
+━━━━━━━━━━━━━━━━━━━━━━
+MAP EXPERIENCE
+━━━━━━━━━━━━━━━━━━━━━━
+
+The map must be the hero section of the application.
+
+Features:
+
+* Current User Location
+* Search Stations
+* Nearby Stations
+* Live Status
+* Custom Map Markers
+* Filters
+
+Filters:
+
+* Fast Charging
+* Slow Charging
+* Available Only
+* Distance
+* Charger Type
+
+Marker Colors:
+
+Green = Available
+
+Orange = Limited Availability
+
+Red = Fully Occupied
+
+Gray = Offline
+
+━━━━━━━━━━━━━━━━━━━━━━
+STATION DETAILS
+━━━━━━━━━━━━━━━━━━━━━━
+
+Show:
+
+* Station Name
+* Address
+* Images
+* Distance
+* Rating
+* Reviews
+* Available Chargers
+* Occupied Chargers
+* Charger Types
+* Power Capacity
+* Last Updated
+* Navigate Button
+
+━━━━━━━━━━━━━━━━━━━━━━
+REALTIME CHARGER STATUS
+━━━━━━━━━━━━━━━━━━━━━━
+
+Implement realtime updates.
+
+Each charger contains:
+
+* Charger ID
+* Capacity
+* Type
+* Status
+
+Status Values:
+
+Available
+Occupied
+Offline
+Maintenance
+
+Changes should instantly update:
+
+* Map
+* Home Screen
+* Station Screen
+
+without refresh.
+
+━━━━━━━━━━━━━━━━━━━━━━
+AI CHARGING ASSISTANT
+━━━━━━━━━━━━━━━━━━━━━━
+
+Create an AI Assistant powered by Gemini.
+
+User Inputs:
+
+* Current Battery %
+* Vehicle Model
+* Destination
+
+AI Returns:
+
+* Best Charging Station
+* Estimated Charging Duration
+* Why Recommended
+* Distance
+* Suggested Route
+
+Response must appear inside a premium AI Chat UI.
+
+━━━━━━━━━━━━━━━━━━━━━━
+OWNER DASHBOARD
+━━━━━━━━━━━━━━━━━━━━━━
+
+Station Owners can:
+
+* Add Station
+* Edit Station
+* Add Chargers
+* Update Charger Status
+* View Usage Statistics
+
+━━━━━━━━━━━━━━━━━━━━━━
+ADMIN DASHBOARD
+━━━━━━━━━━━━━━━━━━━━━━
+
+Admins can:
+
+* Manage Users
+* Manage Stations
+* Delete Stations
+* Approve Owners
+* View Analytics
+* Monitor Platform Activity
+
+━━━━━━━━━━━━━━━━━━━━━━
+DATABASE DESIGN
+━━━━━━━━━━━━━━━━━━━━━━
+
+Create optimized schemas.
+
+Tables:
+
+users
+stations
+chargers
+reviews
+favorites
+charging_sessions
+notifications
+
+Define:
+
+* Primary Keys
+* Foreign Keys
+* Indexes
+* Realtime Subscriptions
+
+━━━━━━━━━━━━━━━━━━━━━━
+UI/UX REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━
+
+The application must look premium.
+
+Design Inspiration:
+
+Tesla App
+Apple Wallet
+Uber
+Google Maps
+
+Style:
+
+* Dark Theme
+* Glassmorphism
+* Frosted Cards
+* Smooth Animations
+* Floating Action Buttons
+* Premium Typography
+* Neon Accents
+* Modern Shadows
+* Interactive Bottom Sheets
+* Skeleton Loading
+* Smooth Screen Transitions
+
+Color Palette:
+
+Background:
+#050816
+
+Primary:
+#00BFFF
+
+Accent:
+#39FF14
+
+Text:
+#FFFFFF
+
+Secondary:
+#A0AEC0
+
+━━━━━━━━━━━━━━━━━━━━━━
+SCREENS
+━━━━━━━━━━━━━━━━━━━━━━
+
+1. Splash Screen
+
+2. Onboarding
+
+3. Login
+
+4. Signup
+
+5. Forgot Password
+
+6. Home Dashboard
+
+7. Full Screen Map
+
+8. Station Details
+
+9. AI Assistant
+
+10. Favorites
+
+11. Notifications
+
+12. Profile
+
+13. Owner Dashboard
+
+14. Admin Dashboard
+
+━━━━━━━━━━━━━━━━━━━━━━
+PERFORMANCE REQUIREMENTS
+━━━━━━━━━━━━━━━━━━━━━━
+
+* Lazy Loading
+* Pagination
+* Optimized Queries
+* Realtime Synchronization
+* Fast Startup
+* Offline Support
+* Error Handling
+* Loading States
+
+━━━━━━━━━━━━━━━━━━━━━━
+DELIVERABLES
+━━━━━━━━━━━━━━━━━━━━━━
+
+Generate:
+
+1. Complete folder structure
+
+2. Database schema
+
+3. Supabase setup
+
+4. Authentication
+
+5. Navigation
+
+6. Screens
+
+7. Components
+
+8. State Management
+
+9. API Integrations
+
+10. Realtime Features
+
+11. AI Assistant
+
+12. Deployment Instructions
+
+13. Environment Variables
+
+14. Testing Steps
+
+━━━━━━━━━━━━━━━━━━━━━━
+WORKFLOW
+━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 1:
+Ask for required credentials.
+
+PHASE 2:
+Create architecture.
+
+PHASE 3:
+Create database.
+
+PHASE 4:
+Create UI.
+
+PHASE 5:
+Create functionality.
+
+PHASE 6:
+Connect APIs.
+
+PHASE 7:
+Testing.
+
+PHASE 8:
+Deployment.
+
+Do not skip phases.
+
+Act like a senior engineering team building a startup MVP intended to win a national-level hackathon.

@@ -1,0 +1,42 @@
+modules = ["nodejs-24"]
+
+[deployment]
+router = "application"
+deploymentTarget = "autoscale"
+
+[deployment.postBuild]
+args = ["pnpm", "store", "prune"]
+env = { "CI" = "true" }
+
+[workflows]
+runButton = "Project"
+
+[agent]
+stack = "PNPM_WORKSPACE"
+expertMode = true
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000
+
+[[ports]]
+localPort = 8080
+externalPort = 8080
+
+[[ports]]
+localPort = 8081
+externalPort = 80
+
+[[ports]]
+localPort = 24055
+externalPort = 3000
+
+[userenv]
+
+[userenv.shared]
+EXPO_PUBLIC_SUPABASE_URL = "https://awrtpuxnnkqlyoqgiyiw.supabase.co"
+EXPO_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_HhhGNRKO5CQxE73QOz8YMg_eXVICbQX"
+EXPO_PUBLIC_GOOGLE_MAPS_KEY = "MOCK_GOOGLE_MAPS_KEY"
+EXPO_PUBLIC_GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"
+GITHUB_REPO = "https://github.com/yempatishashank/EV-Infra.git"
+GITHUB_USER = "yempatishashank"
